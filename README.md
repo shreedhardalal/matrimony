@@ -10,14 +10,14 @@ From this directory, run `python3 -m http.server 8000`, then open <http://localh
 
 - Edit the English text and profile facts in `index.html`. The HTML is also the no-JavaScript fallback.
 - Edit the corresponding Gujarati entries in `translations.js`. Match entries using each element's `data-i18n` or `data-i18n-aria` key. A few translations contain simple HTML such as `<em>`; preserve that markup where appropriate. Edit the Gujarati page title and description there too.
-- The “A few details” section contains height, weight, and placeholders for Nakshatra, Raashi, and the full birth date. Update each field's English value in `index.html` and its matching `*Value` entry in `translations.js`; remove a whole `<div>` in the list to omit a field. The birth month and year also appear in the hero and have a separate `heroBirth` translation. Only the month and year are currently shown; obtain Shreedhar's explicit approval before publishing a full birth date or any other personal details.
-- Both languages should be updated together. Have a native Gujarati speaker review the translation and have Shreedhar review the clearly marked partner-preference draft.
+- The “A few details” section contains height, weight, and the full date of birth. Update the English values in `index.html` and matching Gujarati entries in `translations.js`; remove a whole `<div>` in the list to omit a field. The birth date also appears in the hero through the `heroBirth` translation. Keep both languages synchronized and obtain explicit approval before adding or changing personal details.
+- Both languages should be updated together. Have a native Gujarati speaker review the translation.
 - Family names and photos require family approval before publishing. To omit the family section, remove the entire `<section id="family">` and its navigation link. Also review the family references elsewhere on the page.
 - The language and theme buttons save preferences in the visitor's browser where storage is available. The profile remains readable in English without JavaScript.
 
 ## Add photos
 
-The hero and gallery contain labeled placeholders, not remote images. Put approved photos in a new local `images/` folder in this project. For a placeholder, replace its symbol and label contents with an image, keeping the surrounding `.photo-placeholder` element. For example:
+The hero contains a labeled placeholder, and the gallery uses local images in this project. Put additional approved photos in a local `images/` folder. For a placeholder, replace its symbol and label contents with an image, keeping the surrounding `.photo-placeholder` element. For example:
 
 ```html
 <div class="gallery-image photo-placeholder">
@@ -35,4 +35,4 @@ The email, phone, and Instagram links are together inside `.contact-links` in `i
 
 Publish the contents of this folder as the root of any static host. For GitHub Pages, place these files in the chosen publishing branch or Pages source directory and enable Pages in the repository settings. Check the resulting URL and all relative assets. If this folder is hosted within an existing site, it can also be served at its own subpath.
 
-Before publishing: obtain approval for family names and all photos, review the Gujarati with a native speaker, have Shreedhar approve or replace the draft partner-preference copy, and confirm the publicly visible contact details. Review all personal information for consent; static hosting makes it public and potentially retainable by others.
+Before publishing: obtain approval for any new personal details or photos, review the Gujarati with a native speaker, and confirm the publicly visible contact details. Review all personal information for consent; static hosting makes it public and potentially retainable by others.

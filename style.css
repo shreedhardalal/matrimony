@@ -66,7 +66,7 @@ html[data-theme="dark"] .header-contact { color: #241a1c; }
 
 .hero { position: relative; display: grid; grid-template-columns: 1fr 0.88fr; column-gap: 9%; padding-top: 82px; }
 .hero-copy { padding: 32px 0 52px; }
-.eyebrow, .section-aside, .timeline-type, .placeholder-label, .gallery-image > span:last-child, .draft-badge, .contact-links small { font-size: 10px; font-weight: 750; letter-spacing: .16em; line-height: 1.5; }
+.eyebrow, .section-aside, .timeline-type, .placeholder-label, .contact-links small { font-size: 10px; font-weight: 750; letter-spacing: .16em; line-height: 1.5; }
 .eyebrow { color: var(--maroon); margin: 0 0 24px; }
 .hero .eyebrow { display: flex; align-items: center; gap: 12px; }
 .eyebrow-line { width: 29px; height: 1px; background: var(--maroon); }
@@ -115,7 +115,6 @@ h2 { margin-bottom: 28px; font-size: clamp(42px, 4.5vw, 66px); line-height: 1.08
 .vital-grid > div { min-width: 0; padding: 19px; background: var(--paper); }
 .vital-grid dt { margin-bottom: 9px; color: var(--maroon); font-size: 10px; font-weight: 750; letter-spacing: .08em; }
 .vital-grid dd { margin: 0; color: var(--ink); font-size: 13px; overflow-wrap: anywhere; }
-.vital-pending { color: var(--muted); }
 .journey-section { background: var(--surface); }
 .section-heading-row, .lifestyle-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
 .heading-note, .lifestyle-heading > p { max-width: 250px; font-size: 13px; }
@@ -142,7 +141,6 @@ h2 { margin-bottom: 28px; font-size: clamp(42px, 4.5vw, 66px); line-height: 1.08
 .family-section { background: var(--surface); }
 .family-layout { display: grid; grid-template-columns: 1fr .85fr; gap: 65px; }
 .family-intro { max-width: 430px; }
-.review-note { max-width: 430px; padding-left: 14px; border-left: 2px solid var(--gold); color: var(--muted); font-size: 12px; }
 .family-list { border-top: 1px solid var(--line); }
 .family-list div { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); }
 .family-list div span { color: var(--muted); font-size: 12px; }
@@ -153,18 +151,14 @@ h2 { margin-bottom: 28px; font-size: clamp(42px, 4.5vw, 66px); line-height: 1.08
 .looking-ornament { display: block; margin-bottom: 20px; color: #e0c591; font-size: 28px; }
 .looking-section .eyebrow { color: #e0c591; }
 .looking-section h2 em { color: #e4c69e; }
-.draft-badge { display: inline-block; padding: 6px 10px; border: 1px solid #bca39b; color: #fff5e8; font-size: 9px; }
 .looking-copy { max-width: 530px; margin: 20px auto 0; color: #f0e2d8; font: 20px/1.6 var(--serif); }
 .looking-line { display: block; width: 48px; height: 1px; margin: 32px auto 0; background: #e0c591; }
 .gallery-heading { margin-bottom: 37px; }
 .gallery-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 18px; }
 .gallery-item { margin: 0; min-width: 0; }
 .gallery-image { aspect-ratio: 4 / 3; padding: 15px; }
+.gallery-family .gallery-image { aspect-ratio: 3 / 2; padding: 0; }
 .gallery-tall .gallery-image { aspect-ratio: 1 / 1; }
-.gallery-item:nth-child(2) .gallery-image { background: var(--surface-alt); }
-.gallery-item:nth-child(3) .gallery-image { background: var(--surface); }
-.gallery-symbol { display: block; margin-bottom: 14px; font-size: 35px; }
-.gallery-image > span:last-child { font-size: 9px; }
 figcaption { display: flex; justify-content: space-between; gap: 10px; padding-top: 13px; color: var(--muted); font-size: 11px; }
 .contact-section { padding: 100px 0; background: var(--surface); }
 .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
@@ -230,9 +224,9 @@ figcaption { display: flex; justify-content: space-between; gap: 10px; padding-t
   .timeline-item { grid-template-columns: 1fr; gap: 8px; }
   .timeline-type { grid-column: 1 / -1; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-family { grid-column: 1 / -1; }
   .gallery-tall { grid-column: 1 / -1; }
   .gallery-tall .gallery-image { aspect-ratio: 4 / 3; }
-  .gallery-image > span:last-child { font-size: 8px; }
   .contact-section { padding: 75px 0; }
   .footer-inner { flex-wrap: wrap; }
 }
