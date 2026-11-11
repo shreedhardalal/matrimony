@@ -17,7 +17,7 @@ From this directory, run `python3 -m http.server 8000`, then open <http://localh
 
 ## Add photos
 
-The hero contains a labeled placeholder. The gallery is a four-photo carousel that advances every five seconds and supports arrow buttons, keyboard controls, and touch scrolling. It pauses while hovered or focused and honors reduced-motion preferences. Put additional approved photos in a local `images/` folder and add a `.carousel-slide` with a `.carousel-image` to `index.html`. For example:
+The hero profile image is `profile-photo.jpg`; update its `src` and matching English/Gujarati alternative text when replacing it. The gallery is a four-photo carousel that advances every five seconds and supports arrow buttons, keyboard controls, and touch scrolling. It pauses while hovered or focused and honors reduced-motion preferences. Put additional approved photos in a local `images/` folder and add a `.carousel-slide` with a `.carousel-image` to `index.html`. For example:
 
 ```html
 <div class="carousel-image">
