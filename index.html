@@ -139,13 +139,46 @@
       <div class="wrap looking-inner"><span class="looking-ornament" aria-hidden="true">✳</span><p class="eyebrow" data-i18n="lookingEyebrow">LOOKING AHEAD</p><h2 data-i18n="lookingHeading">The next chapter starts<br>with a <em>conversation.</em></h2><p class="looking-copy" data-i18n="lookingCopy">I hope to meet someone with whom I can share kindness, laughter, and an honest conversation as we get to know each other.</p><span class="looking-line" aria-hidden="true"></span></div>
     </section>
 
-    <section class="section gallery-section" id="gallery">
+    <section class="section gallery-section" id="gallery" aria-label="Photo carousel" data-i18n-aria="carouselLabel" aria-roledescription="carousel">
       <div class="wrap">
         <div class="section-heading-row gallery-heading"><div><p class="eyebrow" data-i18n="galleryEyebrow">MOMENTS, BIG &amp; SMALL</p><h2 data-i18n="galleryHeading">A glimpse of <em>life</em></h2></div><p class="heading-note" data-i18n="galleryNote">I’m grateful to share some of the moments and people closest to me.</p></div>
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-family"><div class="gallery-image photo-placeholder"><img src="family-photo.jpg" alt="Shreedhar with his family at a celebration" data-i18n-alt="familyPhotoAlt"></div><figcaption><span data-i18n="galleryCaption1">A family moment</span><span>01</span></figcaption></figure>
-          <figure class="gallery-item gallery-tall"><div class="gallery-image photo-placeholder"><img src="first-photo.jpg" alt="Shreedhar standing beside his car on a scenic mountain road" data-i18n-alt="firstPhotoAlt"></div><figcaption><span data-i18n="galleryCaption2">A day outdoors</span><span>02</span></figcaption></figure>
-          <figure class="gallery-item"><div class="gallery-image photo-placeholder"><img src="lifestyle-photo.jpg" alt="Lifestyle photo of Shreedhar" data-i18n-alt="lifestylePhotoAlt"></div><figcaption><span data-i18n="galleryCaption3">Everyday moments</span><span>03</span></figcaption></figure>
+        <div class="photo-carousel" id="photo-carousel">
+          <div class="carousel-track" id="carousel-track" tabindex="0" aria-label="Photo slides" data-i18n-aria="carouselTrackLabel">
+            <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Photo 1 of 4" data-i18n-aria="carouselSlide1">
+              <div class="carousel-image"><img src="family-photo.jpg" alt="Shreedhar with his family at a celebration" data-i18n-alt="familyPhotoAlt"></div>
+              <figcaption><span data-i18n="galleryCaption1">A family moment</span><span>01 / 04</span></figcaption>
+            </figure>
+            <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Photo 2 of 4" data-i18n-aria="carouselSlide2">
+              <div class="carousel-image"><img src="bryce-canyon.jpg" alt="Shreedhar enjoying a winter view of Bryce Canyon" data-i18n-alt="panoramaPhotoAlt"></div>
+              <figcaption><span data-i18n="galleryCaption2">A day outdoors</span><span>02 / 04</span></figcaption>
+            </figure>
+            <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Photo 3 of 4" data-i18n-aria="carouselSlide3">
+              <div class="carousel-image"><img src="lifestyle-photo.jpg" alt="Lifestyle photo of Shreedhar" data-i18n-alt="lifestylePhotoAlt"></div>
+              <figcaption><span data-i18n="galleryCaption3">Among the Sequoias</span><span>03 / 04</span></figcaption>
+            </figure>
+            <figure class="carousel-slide carousel-slide-main" role="group" aria-roledescription="slide" aria-label="Photo 4 of 4" data-i18n-aria="carouselSlide4">
+              <div class="carousel-image"><img src="main-photo-jump.jpg" alt="Shreedhar jumping beneath a natural rock arch at Bryce Canyon" data-i18n-alt="mainPhotoAlt"></div>
+              <figcaption><span>04 / 04</span></figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls" hidden>
+            <button class="carousel-arrow" id="carousel-previous" type="button" aria-label="Previous photo" data-i18n-aria="carouselPrevious">
+              <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="m15 4-8 8 8 8"></path></svg>
+            </button>
+            <div class="carousel-center">
+              <div class="carousel-dots" role="group" aria-label="Choose a photo" data-i18n-aria="carouselChoose">
+                <button class="carousel-dot" type="button" aria-label="Show photo 1 of 4" data-i18n-aria="carouselShow1" aria-current="true" aria-pressed="true"></button>
+                <button class="carousel-dot" type="button" aria-label="Show photo 2 of 4" data-i18n-aria="carouselShow2" aria-pressed="false"></button>
+                <button class="carousel-dot" type="button" aria-label="Show photo 3 of 4" data-i18n-aria="carouselShow3" aria-pressed="false"></button>
+                <button class="carousel-dot" type="button" aria-label="Show photo 4 of 4" data-i18n-aria="carouselShow4" aria-pressed="false"></button>
+              </div>
+              <span class="carousel-status" id="carousel-status" aria-live="polite" data-i18n="carouselStatus">Photo 1 of 4</span>
+              <button class="carousel-toggle" id="carousel-toggle" type="button" aria-label="Pause slideshow" data-i18n-aria="carouselPause" data-i18n="carouselPauseText">Pause</button>
+            </div>
+            <button class="carousel-arrow" id="carousel-next" type="button" aria-label="Next photo" data-i18n-aria="carouselNext">
+              <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="m9 4 8 8-8 8"></path></svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>

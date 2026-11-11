@@ -17,15 +17,15 @@ From this directory, run `python3 -m http.server 8000`, then open <http://localh
 
 ## Add photos
 
-The hero contains a labeled placeholder, and the gallery uses local images in this project. Put additional approved photos in a local `images/` folder. For a placeholder, replace its symbol and label contents with an image, keeping the surrounding `.photo-placeholder` element. For example:
+The hero contains a labeled placeholder. The gallery is a four-photo carousel that advances every five seconds and supports arrow buttons, keyboard controls, and touch scrolling. It pauses while hovered or focused and honors reduced-motion preferences. Put additional approved photos in a local `images/` folder and add a `.carousel-slide` with a `.carousel-image` to `index.html`. For example:
 
 ```html
-<div class="gallery-image photo-placeholder">
-  <img src="images/profile.jpg" alt="Shreedhar smiling outdoors">
+<div class="carousel-image">
+  <img src="images/profile.jpg" alt="Shreedhar smiling outdoors" data-i18n-alt="profileAlt">
 </div>
 ```
 
-Use an accurate, descriptive `alt` for each actual photo. For the hero, keep the existing `portrait-frame photo-placeholder` classes. Update the matching Gujarati alternative text too: add `data-i18n-alt="yourPhotoAlt"` to the image and add a `yourPhotoAlt` entry to `translations.js`. Do not publish photos without the pictured people's approval.
+Use accurate, descriptive alt text and translated captions where included. Update the matching Gujarati alt-text and caption entries in `translations.js`, and keep the slide labels and navigation dots synchronized when changing the slide count. Images default to centered crops; the third and final slides fit the full view. For the hero, keep the existing `portrait-frame photo-placeholder` classes. Do not publish photos without the pictured people's approval.
 
 ## Change or remove contact details
 
