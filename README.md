@@ -1,6 +1,6 @@
 # Shreedhar's profile
 
-A standalone, static, bilingual profile. This project does not use the parent site's assets, services, or configuration. There is no analytics, form, backend, or external font request.
+A standalone, static, bilingual profile. This project does not use the parent site's assets or configuration. PostHog loads from its hosted service to capture pageviews; autocapture, session recording, surveys, and feature-flag requests are disabled. The site has no form, backend, or external font request.
 
 ## Preview locally
 
